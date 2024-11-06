@@ -74,3 +74,25 @@ body {
         display: flex; /* Show menu icon on mobile */
     }
 }
+
+/* <navidio.h> */
+.schedule-title {
+    text-align: center;
+    background-color: #D3D3D3;
+    padding-top: 15px;
+}
+
+.schedule-table {
+    width: 100%;
+    text-align: left;
+    border-collapse : collapse;
+}
+
+table.schedule-table th, td {
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+
+table.schedule-table th {
+    background-color: #D3D3D3;
+}
