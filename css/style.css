@@ -1,34 +1,4 @@
-﻿.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-}
-
-.navbar .logo {
-    color: white;
-    font-size: 24px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    padding: 15px;
-}
-
-.nav-links li {
-    margin: 10px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-}
-
-.selectedNav {
-    text-decoration: underline !important;
-}
+﻿
 
 * {
     margin: 0;
@@ -36,44 +6,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-/* Menu Toggle */
-.menu-toggle {
-    display: none; /* Hide checkbox */
-}
-
-.menu-icon {
-    display: none; /* Hide menu icon */
-    flex-direction: column;
-    cursor: pointer;
-    color: white;
-    font-size: 30px;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Hide links by default */
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Adjust based on navbar height */
-        left: 0;
-        background-color: #333;
-        width: 100%;
-        z-index: 1;
-    }
-
-    .menu-toggle:checked + .menu-icon + .nav-links {
-        display: flex; /* Show links when checkbox is checked */
-    }
-
-    .menu-icon {
-        display: flex; /* Show menu icon on mobile */
-    }
-}
 
 /* <navidio.h> */
 .schedule-title {

@@ -1,0 +1,18 @@
+body{
+    background-color:#021526;
+}
+h1{
+    animation: transparancy 5s ease;
+    color: #EABE6C;
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 50px;
+    font-size: 60px;
+
+}
+@keyframes transparancy
+{
+
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}

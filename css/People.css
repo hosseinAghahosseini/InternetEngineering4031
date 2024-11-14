@@ -1,0 +1,36 @@
+.schedule-title {
+    text-align: center;
+    background-color: #021526;
+    padding-top: 15px;
+    color: #B9E5E8;
+    margin-bottom: 10px;
+}
+
+.schedule-table {
+    width: 80%;
+    text-align: left;
+    border-collapse : collapse;
+    margin: 0 auto;
+}
+.test td{
+    border: 1px solid #B9E5E8;
+}
+
+table.schedule-table th, td {
+    padding: 15px;
+}
+
+table.schedule-table th {
+    background-color: #0B192C;
+}
+tr{
+    background-color: #1E3E62 ;
+    color: #B9E5E8;
+}
+tr:nth-child(even){
+    color: #B9E5E8;
+    background-color: #0B192C;
+}
+body{
+    background-color: #021526;
+}
