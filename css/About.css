@@ -1,18 +1,62 @@
-.buali-image {
-    width: 100px;
-    height: 80px;
-
-}
 .text {
-    font-family: vazirmatn;
-    font-size: 30px;
+    font-family: vazir;
+    font-size: 16px;
     text-align: right;
     direction: rtl;
-    margin: 30px;
+    margin: 20px;
     text-align: justify;
 
-    border: 3px solid #3cc2d1;
-    padding: 30px;
-    border-radius: 40px; 
+    border: 2px solid #3cc2d1;
+    padding: 10px 20px;
+    border-radius: 25px;
     box-shadow: 0 12px 5px rgba(0, 0, 0, 0.1);
+}
+
+.text p {
+    margin-bottom: 10px;
+}
+
+.text a {
+    text-decoration: none;
+}
+
+.text > div {
+    margin-right: 10px;
+}
+
+.text > div h3 {
+    margin-top: 10px;
+}
+
+.text ul li {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 700px) {
+    .text {
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .text p {
+        font-size: 14px;
+    }
+
+    .text > div h3 {
+        font-size: 16px;
+    }
+
+    .text ul li {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text p {
+        font-size: 13px;
+    }
+    .text {
+        margin-inline: 5px;
+    }
 }
