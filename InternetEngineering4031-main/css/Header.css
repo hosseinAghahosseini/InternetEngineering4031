@@ -1,0 +1,95 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, #363062, #001c30, #1f4068, #0d7377);
+    background-size: 400% 400%;
+    animation: gradient 18s ease infinite;
+    font-size: 24px;
+}
+.navbar .logo {
+    color: cyan;
+    font-size: 26px;
+    font-weight: 800;
+    display: flex;
+    /* justify-content: ; */
+    align-items: center;
+}
+
+.navbar .logo a {
+    margin-left: 10px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 15px;
+}
+.nav-links li {
+    margin: 10px;
+}
+.nav-links a {
+    color: #b9e5e8;
+    text-decoration: none;
+    font-size: 22px;
+}
+.selectedNav {
+    text-decoration: underline !important;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Menu Toggle */
+.menu-toggle {
+    display: none; /* Hide checkbox */
+}
+
+.menu-icon {
+    display: none; /* Hide menu icon */
+    flex-direction: column;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on navbar height */
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .menu-toggle:checked + .menu-icon + .nav-links {
+        display: flex; /* Show links when checkbox is checked */
+    }
+
+    .menu-icon {
+        display: flex; /* Show menu icon on mobile */
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
