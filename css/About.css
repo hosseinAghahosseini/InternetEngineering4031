@@ -1,3 +1,6 @@
+body {
+    background-color: #021526;
+}
 .text {
     font-family: vazir;
     font-size: 16px;
@@ -5,6 +8,7 @@
     direction: rtl;
     margin: 20px;
     text-align: justify;
+    color: white;
 
     border: 2px solid #3cc2d1;
     padding: 10px 20px;
@@ -18,6 +22,7 @@
 
 .text a {
     text-decoration: none;
+    color: #60b3bc;
 }
 
 .text > div {
@@ -31,6 +36,16 @@
 .text ul li {
     font-size: 14px;
     margin-top: 5px;
+    display: flex;
+}
+
+.text ul li p:first-of-type {
+    /* width: 400px; */
+    width: 50%;
+}
+
+.text ul li p:last-of-type {
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 700px) {
