@@ -1,36 +1,40 @@
+main {
+    padding-block: 10px;
+}
 .schedule-title {
     text-align: center;
     background-color: #021526;
     padding-top: 15px;
-    color: #B9E5E8;
+    color: #b9e5e8;
     margin-bottom: 10px;
 }
 
 .schedule-table {
     width: 80%;
     text-align: left;
-    border-collapse : collapse;
+    border-collapse: collapse;
     margin: 0 auto;
 }
-.test td{
-    border: 1px solid #B9E5E8;
+.test td {
+    border: 1px solid #b9e5e8;
 }
 
-table.schedule-table th, td {
+table.schedule-table th,
+td {
     padding: 15px;
 }
 
 table.schedule-table th {
-    background-color: #0B192C;
+    background-color: #0b192c;
 }
-tr{
-    background-color: #1E3E62 ;
-    color: #B9E5E8;
+tr {
+    background-color: #1e3e62;
+    color: #b9e5e8;
 }
-tr:nth-child(even){
-    color: #B9E5E8;
-    background-color: #0B192C;
+tr:nth-child(even) {
+    color: #b9e5e8;
+    background-color: #0b192c;
 }
-body{
+body {
     background-color: #021526;
 }
