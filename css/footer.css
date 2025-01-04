@@ -1,0 +1,41 @@
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: #333;
+    padding: 10px 20px;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, #363062, #001c30, #1f4068, #0d7377);
+    background-size: 400% 400%;
+    animation: gradient 18s ease infinite;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.class-info {
+    color: white;
+    direction: rtl;
+}
+
+.class-info a {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.map-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    width: 40%;
+    max-width: 500px;
+    min-width: 350px;
+}
+
+.google-map {
+    width: 100%;
+    height: 200px;
+    max-height: 500px;
+    border-radius: 15px;
+}
