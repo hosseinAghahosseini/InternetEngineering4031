@@ -1,0 +1,72 @@
+.part1 {
+    display: flex;
+}
+
+#slideshow {
+    padding-top : 3%;
+    overflow: hidden;
+    height: 300px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+
+.slide-wrapper {
+    width: calc(728px * 10);
+    animation: slide 15s ease infinite;
+}
+
+@keyframes slide {
+
+    9% {
+        margin-left: 0px;
+    }
+
+    18% {
+        margin-left: calc(-728px * 1);
+    }
+
+    27% {
+        margin-left: calc(-728px * 2);
+    }
+
+    36% {
+        margin-left: calc(-728px * 3);
+    }
+
+    45% {
+        margin-left: calc(-728px * 4);
+    }
+
+    54% {
+        margin-left: calc(-728px * 5);
+    }
+
+    63% {
+        margin-left: calc(-728px * 6);
+    }
+
+    72% {
+        margin-left: calc(-728px * 7);
+    }
+
+    81% {
+        margin-left: calc(-728px * 8);
+    }
+
+    90% {
+        margin-left: calc(-728px * 9);
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    .part1 {
+        display: inline;
+    }
+}

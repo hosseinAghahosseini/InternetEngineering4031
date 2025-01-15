@@ -16,11 +16,6 @@ h1 {
     margin-bottom: 40px;
 }
 
-.home-image {
-    margin: 25px;
-    width: 500px;
-}
-
 @keyframes transparancy {
     0% {
         opacity: 0;
