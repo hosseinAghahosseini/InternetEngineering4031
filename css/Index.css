@@ -150,6 +150,26 @@ h2 {
     background: linear-gradient(45deg, #bc92e9, #593f8b);
 }
 
+.points {
+    margin-block: 10px;
+    margin-inline: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.points .stars {
+    display: flex;
+}
+.points .stars .star {
+    width: 20px;
+    height: 20px;
+    margin-right: 1px;
+}
+
+.star.hover {
+    scale: 1.2;
+}
+
 
 @media (max-width: 768px) {
     .topic-box {
