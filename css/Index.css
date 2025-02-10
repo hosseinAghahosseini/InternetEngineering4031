@@ -50,31 +50,70 @@ h2 {
     padding-top: 50px;
     font-size: 50px;
     margin-bottom: 40px;
-
 }
 
 .course-box {
-    
     margin: 20px;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+}
+
+.search-box {
+    width: 350px;
+    height: 35px;
+
+    background-color: white;
+    padding: 0;
+
+    margin-bottom: 20px;
+    display: flex;
+    border-radius: 25px;
+}
+
+.search-box input {
+    width: 315px;
+    height: 100%;
+    margin: 0;
+    border: none;
+    outline: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-left: 10px;
+    cursor: text;
+}
+
+.search-box button {
+    width: 35px;
+    height: 35px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-box button img {
+    width: 25px;
+    height: 25px;
 }
 
 .margin-box {
     position: relative;
     width: 350px;
     margin: 20px;
-    
+
     background: linear-gradient(45deg, #2b8ce7, #3f2b65, #24af9c);
     background-size: 400% 400%;
     border: 3px solid transparent;
-    
+
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
+
     animation: gradientMove 10s infinite;
     overflow: hidden;
 }
@@ -86,17 +125,24 @@ h2 {
     padding: 20px;
     background: #cad0e7;
     background-size: 400% 400%;
-    
+
     border-radius: 15px;
-    
+
     overflow: hidden;
-    
 }
 
 .margin-box:hover {
-    
     transform: scale(1.03);
-    
+}
+.hide,
+.margin-box:has(> .hide) {
+    display: none;
+}
+
+.empty-list {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 @keyframes gradientMove {
@@ -169,7 +215,6 @@ h2 {
 .star.hover {
     scale: 1.2;
 }
-
 
 @media (max-width: 768px) {
     .topic-box {

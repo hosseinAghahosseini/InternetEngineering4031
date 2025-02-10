@@ -1,4 +1,11 @@
 const topics = document.querySelectorAll(".topic-box .points .stars");
+const searchBox = document.querySelector(".search-box");
+const searchInput = document.querySelector(".search-box input");
+const topicBoxes = document.querySelectorAll(
+    ".course-box .margin-box .topic-box"
+);
+const courseBox = document.querySelector(".course-box");
+const emptyList = document.querySelector(".empty-list");
 
 topics.forEach((stars) => {
     let hovered_stars = -1;
@@ -38,4 +45,36 @@ topics.forEach((stars) => {
             }
         });
     });
+});
+
+searchBox.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const arrayOftopicBoxes = Array.prototype.slice.call(topicBoxes);
+
+    topicBoxes.forEach((topic) => {
+        topic.classList.remove("hide");
+    });
+    let hideCourses = 0;
+
+    arrayOftopicBoxes
+        .filter((topic) => {
+            return topic.children[2].textContent
+                .toLowerCase()
+                .search(searchInput.value.toLowerCase(), 0) < 0
+                ? true
+                : false;
+        })
+        .forEach((topic) => {
+            topic.classList.add("hide");
+            hideCourses++;
+        });
+
+    if (hideCourses === topicBoxes.length) {
+        emptyList.classList.remove("hide");
+    } else {
+        emptyList.classList.add("hide");
+    }
+
+    searchInput.value = "";
+    document.activeElement.blur();
 });
