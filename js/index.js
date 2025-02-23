@@ -1,3 +1,4 @@
+// Existing code
 const topics = document.querySelectorAll(".topic-box .points .stars");
 const searchBox = document.querySelector(".search-box");
 const searchInput = document.querySelector(".search-box input");
@@ -78,3 +79,32 @@ searchBox.addEventListener("submit", (e) => {
     searchInput.value = "";
     document.activeElement.blur();
 });
+
+const main = document.querySelector('main');
+
+const heading = document.createElement('h1');
+heading.textContent = 'Hover over the grid to see the effect!';
+
+main.appendChild(heading);
+
+const gridContainer = document.createElement('div');
+gridContainer.classList.add('grid-container');
+
+for (let i = 0; i < 15 * 40; i++) {
+  const cell = document.createElement('div');
+  cell.classList.add('grid-item');
+
+  cell.addEventListener('mouseenter', () => {
+    if (!cell.classList.contains('animating')) {
+      cell.classList.add('hovered', 'animating');
+      
+      cell.addEventListener('transitionend', () => {
+        cell.classList.remove('hovered', 'animating');
+      }, { once: true });
+    }
+  });
+
+  gridContainer.appendChild(cell);
+}
+
+main.appendChild(gridContainer);

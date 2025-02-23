@@ -1,0 +1,28 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    margin: 30px;
+}
+
+.grid-item {
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #3d3d3d95;
+    transition: background-color 1s ease-out;
+}
+
+.grid-item.hovered {
+    background-color: purple;
+}
+
+.grid-item.animating {
+    pointer-events: none;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
