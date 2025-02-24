@@ -1,0 +1,62 @@
+.subscription{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    direction: rtl;
+    flex-wrap: wrap;
+}
+.plan{
+    background-color: #fff;
+    /* padding: 16px; */
+    border-radius: 16px;
+    overflow: hidden;
+    width: 20%;
+    min-width: 300px;
+}
+.card__header{
+    background-color: darkcyan;
+    padding: 16px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+}
+.plan__introduction{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.badge{
+    background-color: rgb(0, 100, 100);
+    padding: 4px 8px;
+    border-radius: 20px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card__body{
+    padding: 16px;
+}
+.card__body li{
+    list-style: none;
+    margin-bottom: 4px;
+}
+.card__body button{
+    border: none;
+    outline: none;
+    background-color: darkcyan;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 8px;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.8;
+    }
+}
